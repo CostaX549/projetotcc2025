@@ -1,5 +1,5 @@
 <script setup>
-
+import { useHead } from '#imports';
 
 useHead({
   link: [
@@ -7,6 +7,16 @@ useHead({
       rel: 'stylesheet',
       href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
       integrity: 'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH',
+      crossorigin: 'anonymous'
+    },
+    {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css',
+        },
+    {
+      rel: 'stylesheet',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css',
+      integrity: "sha512-x7JROg1bfo6rXdDIz+IcAR4/bI/DQZOwuIlLFE3fHcDKBhwrMhZv8XrccrmI6OBTxRX/kwDZ0PIUUbP2lNc5Cw==",
       crossorigin: 'anonymous'
     }
   ],
@@ -22,11 +32,13 @@ useHead({
       integrity: 'sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy',
       crossorigin: 'anonymous',
       defer: true
-    }
+    },
+   
   ]
 });
+
 </script>
 
 <template>
-  <NuxtPage />
+  <NuxtPage  />
 </template>
